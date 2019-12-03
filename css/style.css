@@ -59,6 +59,11 @@ NAVBAR*/
   background: #fff;
 }
 
+.nav>li>a:hover {
+  background: transparent;
+  color: #1abc9c;
+}
+
 /* --------------------------------------------------
 JUMBO */
 
