@@ -1,0 +1,99 @@
+/*==================================================
+--------------------------------------------------
+GENERAL
+--------------------------------------------------
+==================================================*/
+
+.debug {
+  background: darkred;
+}
+
+body {
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+.section-color, .section-white {
+  padding: 96px 0;
+}
+
+.section-color { background: #1abc9c; }
+.section-white { background: ##fff; }
+
+h1,h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/*==================================================
+--------------------------------------------------
+HEADER
+--------------------------------------------------
+==================================================*/
+
+.header-top {
+  background: #2c3e50;
+  color: #fff;
+  padding: 24px 16px;
+  text-transform: uppercase;
+}
+
+.header-top a {
+  color: #fff;
+}
+
+/* --------------------------------------------------
+NAVBAR*/
+
+.navbar-brand {
+  font-size: 28px;
+}
+.navbar-header, .navbar-nav {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.navbar-toggle .icon-bar {
+  background: #fff;
+}
+
+/* --------------------------------------------------
+JUMBO */
+
+.jumbo {
+  padding: 200px 96px;
+  color: #fff;
+}
+
+/*==================================================
+--------------------------------------------------
+MAIN
+--------------------------------------------------
+==================================================*/
+
+/* About */
+
+.about {
+  background: #1abc9c;
+  color: #fff;
+}
+
+/*==================================================
+--------------------------------------------------
+FOOTER
+--------------------------------------------------
+==================================================*/
+
+.footer {
+  background: #2c3e50;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.footer-bottom {
+  background: #1a252f;
+  color: #fff;
+  padding: 24px 0;
+}
