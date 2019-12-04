@@ -18,12 +18,51 @@ body {
 }
 
 .section-color { background: #1abc9c; }
-.section-white { background: ##fff; }
+.section-white { background: #fff; }
+
+.section-color .divider,
+.section-white .divider {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto 32px;
+}
+
+.section-color .divider .lf_line { background: #fff; }
+.section-white .divider .lf_line { background: #333; }
+
+.section-color .divider i.fas,
+.section-white .divider i.fas {
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.divider .lf_line {
+  width: 100%;
+  max-width: 115px;
+  height: 4px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
 
 h1,h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
 }
 
 /*==================================================
@@ -35,41 +74,78 @@ HEADER
 .header-top {
   background: #2c3e50;
   color: #fff;
-  padding: 24px 16px;
   text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 80px;
 }
 
 .header-top a {
   color: #fff;
 }
 
+.logo {
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 637px) {
+  .logo {
+    font-size: 20px
+  }
+}
+
+@media screen and (max-width: 471px) {
+  .logo {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 /* --------------------------------------------------
 NAVBAR*/
 
-.navbar-brand {
-  font-size: 28px;
-}
-.navbar-header, .navbar-nav {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 800;
+.lf_navbar, ul.main-menu {
+  margin: 0;
+  float: right;
 }
 
-.navbar-toggle .icon-bar {
-  background: #fff;
+.lf_navbar ul.main-menu li {
+  list-style: none;
+  display: inline;
 }
 
-.nav>li>a:hover {
+ul.main-menu li:not(:first-child) a {
+  margin-left: 32px;
+}
+
+ul.main-menu li a:hover {
   background: transparent;
   color: #1abc9c;
+  text-decoration: none;
+}
+
+.btn_green {
+  background: #1abc9c;
+  padding: 12.8px;
+  border-radius: 10px;
+  font-weight: 800;
 }
 
 /* --------------------------------------------------
 JUMBO */
 
 .jumbo {
-  padding: 200px 96px;
+  padding: 200px 0 96px;
   color: #fff;
+}
+
+.jumbo .avatar {
+  width: 240px;
+  margin-bottom: 48px;
 }
 
 /*==================================================
@@ -77,6 +153,45 @@ JUMBO */
 MAIN
 --------------------------------------------------
 ==================================================*/
+
+/* Portfolio */
+.work {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.layover {
+  display: none;
+  background: rgba(26,188,156,.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.work:hover .layover {
+  display: block;
+  cursor: pointer;
+}
+
+.layover i.fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: #fff;
+}
 
 /* About */
 
@@ -101,4 +216,8 @@ FOOTER
   background: #1a252f;
   color: #fff;
   padding: 24px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
 }
